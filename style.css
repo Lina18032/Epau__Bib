@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: linear-gradient(to bottom, #292E49, #BBD2C5);
+    margin: 0;
+    height: 100%;
+
+}
+
+nav {
+    background: #CCD8D2;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1000;
+}
+
+
+.logo-image {
+    height: 55px;
+    width: 55px;
+
+
+    filter: contrast(1%) saturate(1%);
+}
+
+#logo-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: max-content;
+}
+
+
+label.logo {
+    color: #888888;
+    font-size: 29px;
+    padding: 0 10px;
+}
+
+nav ul {
+/*     float: right;
+ */
+}
+
+#nav-item {
+    margin: 1.3rem;
+    height: 60%;
+    
+
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #333951;
+    font-size: 20px;
+    padding: 4px 7px;
+    border-radius: 10px;
+}
+
+.nav-button:hover {}
+
+a:hover {
+    background: #E5E5E5;
+    transition: .5s;
+    opacity: 0.5;
+
+}
+
+a.ctr {
+    padding: 0;
+    width: max-content;
+
+}
+
+.contribute {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check {
+}
+
+
+
+#check:checked~ul {}
+
+
+
+
+
+
+nav a button {
+
+    font-size: 16px;
+    color: #CCD8D2;
+    text-decoration: none;
+    margin-left: auto;
+
+}
+
+
+
+
+
+button {
+    padding: 9px 25px;
+    background-color: #383E56;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    margin: 0 10px;
+}
+
+
+.right-image {
+    float: right;
+    margin: 90px 90px 90px 90px;
+    width: 400px;
+    height: 465px;
+    border-radius: 80%;
+    object-fit: cover;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 150px;
+    filter: contrast(100%) saturate(30%);
+    max-width: 100%;
+
+}
+
+.firstheading {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+    letter-spacing: 3px;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+
+#welcome {
+    color: #CCD8D2;
+    text-align: center;
+    font-size: 56px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family: monospace; /* gives a typewriter feel */
+    border-right: 2px solid;
+}
+
+h3 {
+    color: white;
+
+    text-align: left;
+    /* Aligns the text to the left */
+    letter-spacing: 2px;
+    margin-top: 70px;
+    line-height: 25px;
+    margin-left: 45px;
+    /* Removes the left margin */
+    margin-right: 45px;
+}
+
+.p1 {
+
+    
+    
+    font-size: 25px;
+    text-align: left;
+    /* Aligns the text to the left */
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: #CCD8D2;
+    /* Removes the left margin */
+    margin-right: 45px;
+
+}
+
+
+hr {
+    height: 1.5px;
+    background-color: #292E49;
+    border: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+
+.secondheading {
+    color: white;
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.heading {
+    color: white;
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.heading2 {
+    color: white;
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+
+.semester-section {
+    margin-top: 0;
+    /* Adjust or remove as per your design needs */
+}
+
+
+.secondheading .year {
+    line-height: 1.5;
+    /* Adjust this value as needed */
+}
+
+
+.semester {
+    margin: 10px;
+    padding: 15px;
+    border: 1px;
+    border-color: white;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 520px;
+    overflow: scroll;
+
+
+}
+
+
+
+.module {
+
+    color: #333951;
+    font-size: 20px;
+    line-height: 2;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.modulee {
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+
+.module:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}
+
+.global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.global2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    /* Adjust this value according to your preference */
+    margin: 0 auto;
+    /* Center the wrapper horizontally */
+
+}
+
+.header-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    /* Adjust this value according to your preference */
+    margin: 0 auto;
+    /* Center the wrapper horizontally */
+
+}
+
+.header-wrapper h3 {
+    margin: 0;
+    /* Reset the default margin of the h3 tag */
+}
+
+.header-wrapper2 h3 {
+    margin: 0;
+    /* Reset the default margin of the h3 tag */
+}
+
+#prevSpeciality,
+#nextSpeciality {
+    margin: 0 10px;
+}
+
+
+
+.global div {
+    margin: 20px;
+    width: 88%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.global2 div {
+    margin: 20px;
+    width: 88%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.glob div {
+    margin: 20px;
+    width: 88%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.s1 {
+    margin: 15px;
+
+    color: white;
+    font-size: 31px;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+.sems {
+    margin: 15px;
+
+    color: white;
+    font-size: 31px;
+    text-align: center;
+
+}
+
+.sems:hover {
+
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}
+
+.year {
+    color: white;
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+
+}
+
+.year:hover {
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+
+}
+
+.icon {
+    width: 27px;
+    height: 27px;
+    margin-right: 18px;
+    margin-top: 10px;
+    vertical-align: top;
+
+}
+
+.icon::before {
+    display: inline-block;
+    background-color: blue;
+    background-image: url('Iconsax/Linear/booksquare.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+path {
+    stroke-width: 2;
+    /* sets the width/thickness of the curve */
+    stroke: #3498db;
+    /* sets the color of the curve */
+}
+
+.grp2 {
+    width: 100%;
+
+}
+
+.made {
+    color: #292E49;
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.lina {
+    color: #292E49;
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+    position: absolute;
+
+}
+
+.image-container {
+    position: relative;
+    width: desired-width;
+    /* e.g., 300px or 100% or whatever you prefer */
+    height: desired-height;
+    /* e.g., 200px */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+.image-container iframe {
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+    
+    bottom: 15px;
+    
+    left: 15px;
+}
+
+
+.overlay-text {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    color: #292E49;
+    font-size: 24px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.c-epau {
+    display: flex;
+    justify-content: center;
+    /* centers content horizontally */
+    align-items: center;
+    /* centers content vertically */
+    height: 50px;
+
+}
+
+.epau-bib {
+    color: #383E56;
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.c-study {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+.study {
+    color: #383E56;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    margin: 0px;
+
+}
+
+
+
+
+
+.icon2 {
+
+    width: 35px;
+    height: 35px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 2s, transform 2s;
+    animation-delay: 2s;
+}
+
+
+
+
+.fade-in {
+    animation: fadeIn 0.15s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.15s forwards;
+}
+
+
+
+
+
+@media screen and (max-width: 649px) {
+
+    body {
+        background-color: #CCD8D2;
+    }
+
+    nav {
+        background: #CCD8D2;
+    }
+
+    nav ul {
+        
+        background-color: #CCD8D2;
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 4rem;
+        right: 0.2rem;
+        border-radius: 5px;
+
+
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*display: block;*/
+        margin-bottom: 10px;
+    }
+
+    
+
+
+
+    .checkbtn {
+        display: block;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .nav-button {}
+
+    .logo-image {
+        height: 40px;
+        width: 40px;
+        margin-left: 5px;
+        margin-top: 5px;
+
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    label.logo {
+        font-size: 24px;
+    }
+
+    #nav-item {
+        margin: 1.3rem;
+        height: 60%;
+        border-bottom: solid 1px #888888;
+    
+    }
+
+    .right-image {
+        width: 200px;
+        /* Reduce width for mobile */
+        height: 232px;
+        /* Adjust height accordingly */
+        margin: 30px 30px 30px 30px;
+    }
+
+    .firstheading {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    #welcome {
+        color: #CCD8D2;
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        margin-left: 100px;
+        
+       
+    
+    }
+
+    h3 {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .p1 {
+        font-size: 18px;
+    }
+
+    .year {
+        font-size: 24px;
+    }
+
+    .sems {
+        font-size: 24px;
+    }
+
+    .glob {
+        flex-wrap: wrap;
+    }
+
+    .glob div {
+        width: 90%;
+        /* Occupy full width so they stack vertically */
+        margin-right: 15px;
+    }
+
+    .global {
+        flex-wrap: wrap;
+    }
+
+    .global div {
+        width: 90%;
+        /* Occupy full width so they stack vertically */
+        margin-right: 15px;
+    }
+
+    .global2 {
+        flex-wrap: wrap;
+    }
+
+    .global2 div {
+        width: 90%;
+        /* Occupy full width so they stack vertically */
+        margin-right: 15px;
+    }
+
+    .epau-bib {
+        font-size: 22px;
+
+    }
+
+    .icon2 {
+        width: 27px;
+        height: 27px;
+
+        vertical-align: middle;
+    }
+
+    .study {
+        font-size: 20px;
+
+        vertical-align: bottom;
+
+    }
+
+    .image-container iframe {
+        position: absolute;
+        z-index: 1;
+        
+        bottom: 10px;
+        
+        left: 10px;
+        width: 250px;
+        height: 150px;
+        visibility: hidden;
+    }
+
+
+    .overlay-text {
+        position: absolute;
+        bottom: 0;
+        /* Position at the bottom of the container */
+        right: 0;
+        /* Position at the right of the container */
+        transform: none;
+        /* Remove the transform */
+        color: #292E49;
+        font-size: 18px;
+        margin: 6px;
+        padding: 10px;
+        max-width: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-radius: 15px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 1128px) {
+
+    body {
+        background-color: #CCD8D2;
+    }
+
+    nav {
+        background: #CCD8D2;
+    }
+
+    nav ul {
+        background-color: #CCD8D2;
+        width: 40%;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 4rem;
+        right: 0.2rem;
+        border-radius: 5px;
+    }
+
+
+    #check:checked+.checkbtn+.logo-image+.logo+#navbarList {
+        /* display settings for when the menu should be visible. This is just an example and depends on your actual styling */
+    }
+
+
+    #navbarList {
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    nav ul li {
+
+        margin: 5px 0;
+        display: block;
+
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .nav-button {
+        top: 22px;
+        right: 50px;
+    }
+
+    #nav-item {
+        margin: 1.3rem;
+        height: 60%;
+        border-bottom: solid 1px #888888;
+    
+    }
+
+    .logo-image {
+        height: 50px;
+        width: 50px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    .firstheading {
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
+
+    #welcome {
+        color: #CCD8D2;
+        text-align: center;
+        font-size: 45px;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        margin-left: 100px;
+        
+       
+    
+    }
+
+    .right-image {
+        width: 300px;
+        /* Reduce width for tablet */
+        height: 350px;
+        /* Adjust height accordingly */
+        margin: 60px 60px 60px 60px;
+    }
+
+    .year {
+        font-size: 26px;
+    }
+
+    .sems {
+        font-size: 26px;
+    }
+
+    .glob,
+    .global,
+    .global2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-container iframe {
+        position: absolute;
+        z-index: 1;
+        
+        bottom: 15px;
+        
+        left: 15px;
+        width: 350px;
+        height: 250px;
+        visibility: hidden;
+    }
+
+    .p1 {
+        font-size: 22px;
+    }
+
+    .study {
+        font-size: 24px;
+
+        vertical-align: bottom;
+
+    }
+
+    .epau-bib {
+        font-size: 26px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .overlay-text {
+        position: absolute;
+        bottom: 0;
+        /* Position at the bottom of the container */
+        right: 0;
+        /* Position at the right of the container */
+        transform: none;
+        /* Remove the transform */
+        color: #292E49;
+        font-size: 22px;
+        margin: 10px;
+        padding: 15px;
+        max-width: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-radius: 15px;
+    }
+
+}
